@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motorcycle Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="top-info">
+      🕒 <span id="time">--:--:--</span> | เกียร์: <span id="gear">N</span>
+    </div>
+
+    <div class="main-panel">
+      <div class="gauge-wrapper">
+        <canvas id="speedometer" width="300" height="300"></canvas>
+        <div class="speed-display"><span id="speed">0</span> km/h</div>
+      </div>
+
+      <div class="info-panel">
+        <div>🔥 อุณหภูมิ: <span id="temp">90</span>°C</div>
+        <div>🔋 แบต: <span id="volt">12.6</span>V</div>
+        <div>⛽ น้ำมัน: <span id="fuel">65</span>%</div>
+        <div>🛠️ MIL: <span id="mil">ปกติ</span></div>
+        <div>ทริป: <span id="trip">5.3</span> กม.</div>
+        <div>เลขไมล์: <span id="odo">1502.7</span> กม.</div>
+        <div>📍 พิกัด: <span id="location">--</span></div>
+      </div>
+    </div>
+
+    <div class="rpm-bar">
+      <div id="rpm-fill" class="rpm-fill"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
